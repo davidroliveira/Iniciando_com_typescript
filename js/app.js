@@ -49,9 +49,17 @@ function listaNomes(lista) {
 ///////////////////////////////////////////////////////
 var veiculo_class_1 = require("./classes/veiculo-class");
 var moto_class_1 = require("./classes/moto-class");
-var camaro = new veiculo_class_1.Veiculo("Camaro1");
-var honda = new moto_class_1.Moto("Moto1", 2);
+var camaro = new veiculo_class_1.Veiculo("Camaro Amarelo");
+var honda = new moto_class_1.Moto("Honda Titan", 2);
 console.log(camaro.getTitulo());
 console.log(honda.getTitulo());
 console.log(honda);
+//document.getElementById('nomeMoto').innerHTML = honda.getTitulo();
+//let minhaDiv: HTMLDivElement; //= document.getElementById('nomeMoto') as HTMLDivElement;
+var motoDiv = document.getElementById('nomeMoto');
+motoDiv.innerHTML = honda.getTitulo();
+console.log(motoDiv);
+var carroDiv = document.getElementById("nomeCarro");
+carroDiv.innerHTML = camaro.getTitulo();
+console.log(camaro);
 //# sourceMappingURL=app.js.map

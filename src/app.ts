@@ -58,11 +58,23 @@ function listaNomes(lista: string[]): void {
 import { Veiculo } from './classes/veiculo-class';
 import { Moto } from './classes/moto-class';
 
-let camaro: Veiculo = new Veiculo("Camaro1");
-let honda: Moto = new Moto("Moto1", 2);
+let camaro: Veiculo = new Veiculo("Camaro Amarelo");
+let honda: Moto = new Moto("Honda Titan", 2);
 
 console.log(camaro.getTitulo());
 
 console.log(honda.getTitulo());
 
 console.log(honda);
+
+
+//document.getElementById('nomeMoto').innerHTML = honda.getTitulo();
+//let minhaDiv: HTMLDivElement; //= document.getElementById('nomeMoto') as HTMLDivElement;
+let motoDiv = document.getElementById('nomeMoto') as HTMLDivElement;
+motoDiv.innerHTML = honda.getTitulo();
+console.log(motoDiv);
+
+
+let carroDiv = document.getElementById("nomeCarro") as HTMLDivElement;
+carroDiv.innerHTML = camaro.getTitulo();
+console.log(camaro);

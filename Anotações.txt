@@ -1,4 +1,5 @@
 tsc -w -> observanco alterações e compila automatico
+
 node app.js -> roda arquivo js
 
 tsconfig.json
@@ -11,6 +12,26 @@ tsconfig.json
 }
 
 -> comandos para inicializar controle de bibliotecas para webpack
-npm -init 
-npm install ts-loader webpack  --save-dev
+npm init 
+npm install ts-loader webpack --save-dev
 npm install -g webpack
+
+-->Depois atualizei o webpack o typescript e o ts-loader ... simplesmente apaguei eles no package.json e rodei:
+npm i --save-dev webpack typescript ts-loader
+npm install -g webpack webpack-cli
+
+webpack -w
+
+-->live-server
+https://gist.github.com/donmccurdy/20fb112949324c92c5e8
+Verify that Node.js is installed. If you see anything when you run which npm in a terminal, it is. If not, follow the instructions at nodejs.org to install.
+Install live-server: npm install -g live-server
+Move your terminal to where your pages live: cd <path-to-content>
+Start the server: live-server .
+Open localhost:8080 in a browser.
+http://127.0.0.1:8080/producao/index.html
+
+/////////////////////////////////////////////////////////////////////////
+tsc -w
+webpack -w
+live-server
