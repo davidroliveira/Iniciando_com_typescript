@@ -74,7 +74,13 @@ let motoDiv = document.getElementById('nomeMoto') as HTMLDivElement;
 motoDiv.innerHTML = honda.getTitulo();
 console.log(motoDiv);
 
-
 let carroDiv = document.getElementById("nomeCarro") as HTMLDivElement;
 carroDiv.innerHTML = camaro.getTitulo();
 console.log(camaro);
+
+let button = document.createElement('button');
+button.textContent = 'Say hello';
+button.onclick = function () {
+    alert(camaro.getTitulo());
+}
+document.body.appendChild(button);

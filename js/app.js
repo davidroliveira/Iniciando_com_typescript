@@ -62,4 +62,10 @@ console.log(motoDiv);
 var carroDiv = document.getElementById("nomeCarro");
 carroDiv.innerHTML = camaro.getTitulo();
 console.log(camaro);
+var button = document.createElement('button');
+button.textContent = 'Say hello';
+button.onclick = function () {
+    alert(camaro.getTitulo());
+};
+document.body.appendChild(button);
 //# sourceMappingURL=app.js.map
