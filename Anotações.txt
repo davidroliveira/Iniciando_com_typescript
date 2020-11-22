@@ -1,0 +1,16 @@
+tsc -w -> observanco alterações e compila automatico
+node app.js -> roda arquivo js
+
+tsconfig.json
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "outDir": "dist"
+  }
+}
+
+-> comandos para inicializar controle de bibliotecas para webpack
+npm -init 
+npm install ts-loader webpack  --save-dev
+npm install -g webpack
