@@ -1,3 +1,7 @@
+npm --version
+npm install -g typescript
+tsc --version
+
 tsc -w -> observanco alterações e compila automatico
 
 node app.js -> roda arquivo js
